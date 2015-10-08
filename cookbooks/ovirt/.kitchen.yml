@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+  customize:
+    memory: 4096
+    cpus: 2
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-7.0
+  - name: centos-7.1
+  - name: redhat-7.0
+  - name: redhat-7.1
+
+suites:
+  - name: default
+    run_list:
+      - recipe[ovirt::engine]
+    attributes:

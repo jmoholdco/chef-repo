@@ -1,0 +1,12 @@
+name 'jml-ubuntu-defaults'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures jml-ubuntu-defaults'
+long_description 'Installs/Configures jml-ubuntu-defaults'
+version '0.5.3'
+
+depends 'apt', '~> 2.8.2'
+depends 'chef-vault', '~> 1.3.0'
+depends 'users', '~> 1.8.2'
+depends 'vim', '~> 1.1.4'

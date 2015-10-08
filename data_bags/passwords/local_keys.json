@@ -1,0 +1,38 @@
+{
+  "id": "local_keys",
+  "admins": [
+    "morgan"
+  ],
+  "clients": [
+    "ns1",
+    "debian",
+    "gandalf.jmorgan.org",
+    "frodo",
+    "git",
+    "dev",
+    "foreman",
+    "ns1.jmorgan.org",
+    "frodo.jmorgan.org",
+    "dev.jmorgan.org",
+    "git.jmorgan.org",
+    "foreman.jmorgan.org",
+    "chef.jmorgan.org",
+    "ovirt.jmorgan.org"
+  ],
+  "search_query": "*:*",
+  "ns1": "W0f6oos2f4BIhVXAhPBpasqV+VYx7hd0npGQ5X2s3N6X4x0EbyWTCkaPDd5C\nRQt5KCfZ9isLCXfm3zzNNJ21FhcA4Wj4u3RxjtIRsJdngivyum4OFIS78/Ms\nKPLw1cnY+fMEkNYHG3WU5Zd94JhNGeeqba2IENaFIMDKyCd9N/KKhFAvmljS\njlHFMKpuRGZo1OzYg2Rzg0MbdUxJ9ZjLe6gFCfY5+o3t+rcQ7kNHZNFd1YxS\nO/4tSg6JSMUEO146OR9SKcbqjDNzRBAMBF+q98r8n7LfzxtC5s/cJ8n87pSi\nzYMYlBjphivzqpguB71zXS2WTLc/vqLuFQPVLjcZnw==\n",
+  "debian": "dPiKbtj/OiYpuztIzjh4j85M2CiPMcVOMCZ10KWaG0DaDZJJ32TlaWPRra/X\n8d+hCtnmSk9L4Y3JkeiFTVZythsKCC4HRguq2HYdp3F4aFaorQ5cJY96xNEI\nBiWOUJokh+I7QiiNLTfhagALumN6AEg0uWlpm8R4XHFSlcs5/gd/8u1Zrgka\n0Mf77o5mAHNJ1YDeMfxCHxw792s6VljETO7c3gvPcavPEZPy4qs4oHayuWVk\nLaruFDaE2LxFiGxVPWrv00nlEiA883N2/yy4XDKaS6iRDE1vjjzQ3sAcbwsf\nKf/HK1t33BANhry/MQHQUwAIYVdwTgeJpFH4BQtIMw==\n",
+  "gandalf.jmorgan.org": "AEQBJgiRHfZQNi6EIzY1N+Aeu0tWCP3zp91ivaiez88wlFdIq0vns/za59iD\nQfWg86GUhsCp++lIJneA5Z8ROs38fWZrUUfpfbv/cLwz8ukvDf2fupqKB2mf\nEy0F0WYZmaZ8ii0avBAMl/IwbyvlnR4DhT3SZ6kFVGeUKJI0nw4ND+A6hm63\nFXBNv+uCUkabeCfI9tP9CgfYLuRnCaZG7aQ129fyJ/IFBkx4orKZHOZ18tt2\nI6flj0YmCcYYQd8hRbnhDzZeoRd4RZcdpClTaYEkUaikH0gxzMpeCzUcTQqr\nYCoe0tIgAtSeLEm/CXISR11q7DodVPXOO238JhsLXQ==\n",
+  "morgan": "pOarb8EtbPpPIYi9T1JzeyZIYyeVMcE7AxngYb8reBLG+or9Dku5qlBI7FUE\nfXk8Zxf/WwaP+uO3VrVS5usBQM1zwHlXsxiRr9iNrV/Aauu6dkKol2Lc8Qit\nW2DjtqIIc4xhwn3xCmeG36GXXDw/C31rr384Rav0smQpe9sc9TIbxMoG1ARW\nE+G6m+RNmCJwngiZyBRfWhSoDM6pPC7cdgu36FyPArk3GQMq3eiIl0Nkmulf\nMVtA4on35ytwSdeJ8hWYqxjevTo9j6V4sOiWqG2tp32X5nuq4NfhnyJRBjeC\nbRs8auG233Ex806ZnWbWQoW4RzwxIJNpCOumlFcCOA==\n",
+  "frodo": "WSq7VYytslyJX1xAbqP7SMEQ10rB9/W6a3TIQx1bIXR3jlCzz7W3R9fzqK6+\nkAn4QC6ehFSJKOu667d7y63zPWvfjTuZcHGEpjESqPAPWyCPNU5amXE0zZFh\nH5C1NbigK8/7COILkcwVMSZNrM2wtNjAfBbUkVfFn2NHQSBVScaNY6BWpO+L\n6senj1XNDxAT86BMtjvRseoL54oCftaYIhob8kTw4t3EUbGZNcAnFRwmpGpi\nyRGZ5SYZ517O2DKkk6bg2jjnqjt1b1ayD35d8u5Ec+WGX9zxahAmUCh26Dp6\nXwl60dHq1DRoCYKdiqZacDyKfScO2mOgB39fkZKb4Q==\n",
+  "git": "nKdx1h+YWfEoD3+f0c3Q2sHPJxzbnSwxJrrNup4G7siGeCwTTE/4vskqnbgX\n7W7nxx+1QhUKrwiuezknFvcT2Xx4zJEaZTUfPZZgpADnC/jftcGVjAa/uHZG\nO6xH9CwEB48ezg6mIF2I92QiEyRr4E0uPjYr/eRBSW9eCXoGy1Zsmcxhi0TD\n5wX9GYJvt4psxQjLIvG5I7T4eXz8pCHPR5jmv3xAg1864q/Ai+zONUuwoj9q\nZQLSx85BCmxt2gGRv6Th8CgdfbWt29Iz23dKSOeVD3VDcbl2AEs0rH52KwRQ\nsEKQfYrWYz/b7+cETQbdLlJGXf3v2r1hTMqHpvnpFg==\n",
+  "dev": "rgtgaJsuXzblE4/CFpMUxGx7RPVgFI4xx1f8Cz5qH8ldUYQjesA9bZqutepN\n9ZP+4QYIbD5eVLrC4147Ab6wUO+D+STIEAV1hFK7+YQxlMVgGcwBQhNjbY13\nA/99NpLNaWlsoypDBV/W6NDoLyD8nW+z5D9/VGtYBuvmCTIblSY3+XzeAXFn\nrfJd+7XlAybODRHsHNrd1gsP65CftCazMpqVWohtPF0SdT8cg+VbHzNwYDyL\nQaqtOCc8sH9dlh/t00GWrcRXz6ExJmQMiVmaXsw0R5TbUH3r1hw1S5j6ogPj\n4PO33DqeGiXVkhPC0me9o7TOwnGKpy4wXZdHAtGfNg==\n",
+  "foreman": "yJ6cZOxNgKNG3KL87b/b+u2Shx3yj3dQ+VthIRDNoNZmXajqhKQvCrD9wLC8\n7bnYTtH98D0Emh5sMyEF/kQ2wbrOZHzmqL5QTYCCec3E4WZHwphNEuzC/FpP\nI+Z2cg8xWeyoXvb1AATCEU7v7Ps3ZIzJJaZtuzCXE+igqMygNcspkwN4WQqp\npOwErswgmO2S4v6xEGwjPMj8UcSPWBEChr1PAfZ5ghN7jJaiT4hxEmPRotMg\nb0RWbRxtHdUUETgWJlbnfuBqKC6USaB5VkyLlJxjNqaCM6VAzSbpUsbzFdC8\now8b4PwOHB3Fi4I3z/lvQT5qIKtt3mGBOLXmi2A8Fw==\n",
+  "ns1.jmorgan.org": "q3oNMKbI3h8z7CN8QsM8uIjuQHnlouhZtLEddeQYQ7xDsbrAtjnUDNwC8rQr\n0o97BqKlhHqNjDDPBjU45fc1/maQf+Z6BqCcWxo61VrfWCI9ZEzImXWjZlLE\ntwX5aLGw1IBqPV4ky280RDkOW1jnQG+IuWb0saj/vWt4Tqs3fTviWzGygyLh\nOh31er6KXkReKjAAeR/c7gm6CsVjV5DTuTB/nh+HIFWmKPZEls2mYLcLfiSx\n/YIIT0BIOGa+iVbvkU1khMD4myIgSS9jJsggISzXg4PYUUdOen+HroEml+O2\nWgzgEGTO2Vy+JP5r56Y1jO7vz6hMe1vaaGq2hjDj7Q==\n",
+  "frodo.jmorgan.org": "AWI5CbbOCOCI+TkMOALKKchQiNS+slcvod6Y3YpLSxQAaU74mMOXu1mfzvM+\n6NkXNhOCXFKAqm4/RjOVEE61jI+NH1Eqaryd1Jq11MGGqxWWxs7oeV/doRO8\nX/HnisGHKZnySm/BiuVA1edxLZAWMtdQEEP1DzmZVwrrvtg6UIf3oTiR5gO9\nZP5yKU/DWvEwwudm7TaKZtpzI39Yz9QyYG2OLKMVYiRZnvAL//XrqAchRD7c\n8R8h10gxjB52Q5S4A4dfyyWuIX7v4lZznmrwluoROHwDrbrqxum08pGz0MiI\nzVFnMPV3Zgk7Tfk2/omASnYAtcgFso3UTlOzVSXL3w==\n",
+  "dev.jmorgan.org": "A3pycv26q0tMkKwixXjbtKz/DycIZkZFJajRZKqg8cYnySGep64freC/5gxk\nAoRu2qW9DsbVXd+OObhMHT4EaNJSF+tKr3atud8HfTZ/B/4IRA1Av+WHcuVO\nNHH5AAQgjClOMXuppeFeJhLVlYH3NNeUaMeOMDHlNKI1juSZ5FVJ9TfJPukG\nRArmUD1tkWxcXgWNPfKh+/luo7nyBoyW+OFypknrVT+76NMI/bhjCaqZneZu\nHMgcjp66Qt0hRg0beoB5rvMy0jZo26n6yB5E6SCCRV2yq/NOPWcXWm2jGfb/\nRwaCwo0pQ4BT4Lvqomb6UMLpvwbNZYn8msgdlPde4Q==\n",
+  "git.jmorgan.org": "hKBS0yeJnHEsI5oI20vziJsjoP6PWaGo/SIR1scwDr8RlNFwIofTvRze5ieO\nfoy2ibytidebrEjn/A4aWOyOrnlxo25JLZguVR+GjuswzO9Yy0byy1sUO0cO\nA98sQ6Q3vLlJepT/G2rgR1ygq0Zm8hxrcjvvvF+N3gxpM3oOt8psVADHRHOl\ndPml65n+SoGmNONCCUmfTeiLtpiQqJV2j5a/BEos7s9scgPWwDtKvvp/xL+q\nB9w2jHgxZ5HWVCFP6xyuJ+O/F0eCnYF9Gz2iGtiaw8bMOuz+KAgSHQvIAb8N\nuAkBzPdpoMDvVKZaHip14xtToneJj8xWwnbp2VKmeQ==\n",
+  "foreman.jmorgan.org": "NOwOZJICEUq6iwS5zlSJ1m23tD8tYXfnRn3z4bdQkYAqvEtAcYl39B/LJm2D\nymp0YRmhi5yUL8R49UuGU+bh2LG/CUz3v8Qba2CdiZwQsgf45oNAscF/uiIu\na4cAOBn9vS5kEHmasAbor8V9yMF8odG0blSaR+61mQuy3BFsH0qqWXHDMlnq\ny4kMlCMF5DhUpdCzlCI32xYKuxLKUGh5rGnqAeOp7wkxIfaxxVITIFs59ubY\nlU+O0YQeJ2z5n0PyOCBFeracSnCuE0AgkduPOIBvlfs4eLYCGs3+hUlP1Wzu\nko6hmazSYbStZ2Rga/Wd08k52aLTzQELDy4vJxb0tQ==\n",
+  "chef.jmorgan.org": "D47+ALaxzj9VY3AZ9yXfs+LAdws7g/F+RgLRia6IjJe15cBVvhfujiNrlgtn\n+JYG9mYnp0ZhtTs1Jqs2/6B81QNNtNub6KEzgeR4s6DaCDi5BhxRB4AWlnLR\n+/CJKwBadDFBOI1euEAGYgsf/EqftdY/lfRzMkbc25ozF+4EUJkqLVO7gdyD\nWZuJ1TGKDcWeWvhlgWfE9n1hGEl3hdQvOiuEgFquWaeydeaQuCabL6K5+rh/\nSpwjkhR0s0d7t6vsAJuwrX532YxgZlHAIOpdxa6eGpen7pLvZqyP7EP89Hvb\nupcOhjG5c4PbzyoXwkmr1S1GmOo002jk1jZIAqpPuw==\n",
+  "ovirt.jmorgan.org": "LbsfkTOY02O/klABnWrl9ak+blANg/m3TcXDUMzZx6uc8j8O6/d5Xi6T3cE+\nVUJwuusjsfKZvHsizD+F3NkfwAmJhXJSVCm5m39+srcJj16E96ki/spPxPsd\nauyGFR/Omcu7QLBZ7KGFRcK0arQUStlil18inaILSGwjbeekYcTlUFuDXOPG\nShIjr3YTXOccfdW//qT8mwGu03U2N7sdG8qGzMWrqx4cJvw0R6uSiUjJDQpB\nmGryZBbMEeLa9/nJo99gPVqGEwSu5B7NZ5Dji1Ujziu0pQ+JW+2oPErXfpfK\nCh85LP2IV84cYXeGVC6n7fbYb22/AIBnfIQ7Qi2hfw==\n"
+}

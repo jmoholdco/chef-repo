@@ -1,0 +1,7 @@
+name 'nameserver'
+maintainer 'J. Morgan Lieberthal'
+maintainer_email 'morgan@jmorgan.org'
+license 'mit'
+description 'Installs/Configures nameserver'
+long_description 'Installs/Configures nameserver'
+version '0.1.0'

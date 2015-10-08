@@ -1,0 +1,9 @@
+{
+  "id": "root",
+  "cert": {
+    "encrypted_data": "6jSNI4Eh8oQEcgewJgStqpPzCZGBwYC9Z8t3yLyxv94=\n",
+    "iv": "7hKXG1oTr+ASxJkOBZNP0g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

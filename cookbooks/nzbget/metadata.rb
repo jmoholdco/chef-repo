@@ -1,0 +1,7 @@
+name 'nzbget'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures nzbget'
+long_description 'Installs/Configures nzbget'
+version '0.1.0'

@@ -1,0 +1,18 @@
+{
+  "windows": {
+    "stable": "https://github.com/nzbget/nzbget/releases/download/v15.0/nzbget-15.0-bin-win32-setup.exe",
+    "testing": "https://github.com/nzbget/nzbget/releases/download/v16.0-r1439/nzbget-16.0-testing-r1439-bin-win32-setup.exe"
+  },
+  "darwin": {
+    "stable": "https://github.com/nzbget/nzbget/releases/download/v15.0/nzbget-15.0-bin-osx.zip",
+    "testing": "https://github.com/nzbget/nzbget/releases/download/v16.0-r1439/nzbget-16.0-testing-r1439-bin-osx.zip"
+  },
+  "linux": {
+    "stable": "https://github.com/nzbget/nzbget/releases/download/v15.0/nzbget-15.0-bin-linux.run",
+    "testing": "https://github.com/nzbget/nzbget/releases/download/v16.0-r1439/nzbget-16.0-testing-r1439-bin-linux.run"
+  },
+  "source": {
+    "stable": "https://github.com/nzbget/nzbget/releases/download/v15.0/nzbget-15.0-src.tar.gz",
+    "testing": "https://github.com/nzbget/nzbget/releases/download/v16.0-r1439/nzbget-16.0-testing-r1439-src.tar.gz"
+  }
+}

@@ -1,0 +1,10 @@
+name 'ovirt'
+maintainer 'J. Morgan Lieberthal'
+maintainer_email 'j.morgan.lieberthal@gmail.com'
+license 'MIT'
+description 'Installs/Configures ovirt'
+long_description 'Installs/Configures ovirt'
+version '0.1.0'
+supports 'centos'
+
+depends 'yum', '~> 3.7.1'

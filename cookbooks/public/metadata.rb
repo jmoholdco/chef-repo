@@ -1,0 +1,10 @@
+name 'public'
+maintainer 'Morgan Lieberthal'
+maintainer_email 'morgan@jmorgan.org'
+license 'MIT'
+description 'Installs/Configures recipes for public-facing servers'
+version '0.2.4'
+
+depends 'fail2ban', '~> 2.3.0'
+depends 'firewall', '~> 2.0.4'
+depends 'firewalld', '~> 1.1.1'

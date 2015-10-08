@@ -1,0 +1,9 @@
+{
+  "id": "local",
+  "local": {
+    "encrypted_data": "z+A94D+UqbWC8/bunov4yFw0KdXKueuTShXuwFoMrIQ=\n",
+    "iv": "Ofx42wiRvO0F/WYVUgUFtg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

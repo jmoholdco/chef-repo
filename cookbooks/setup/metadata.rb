@@ -1,0 +1,12 @@
+name 'setup'
+maintainer 'J. Morgan Lieberthal'
+maintainer_email 'morgan@jmorgan.org'
+license 'MIT'
+description 'Initial setup for machines in JML Organization'
+version '0.3.1'
+
+depends 'chef-vault', '~> 1.3.0'
+depends 'apt', '~> 2.8.2'
+depends 'chef-client', '~> 4.3.1'
+depends 'yum-epel', '~> 0.6.3'
+depends 'ntp', '~> 1.8.6'

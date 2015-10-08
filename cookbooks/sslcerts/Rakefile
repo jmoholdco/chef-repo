@@ -1,0 +1,20 @@
+begin
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec)
+  task default: :spec
+rescue LoadError => e
+  puts "Could not load RSpec::Core::RakeTask (#{e})"
+end
+
+begin
+  require 'ruby-lint/rake_task'
+  require 'ruby-lint/definition_generator'
+  RubyLint::RakeTask.new do |t|
+    t.name = 'lint'
+    t.files = ['./libraries']
+  end
+rescue LoadError => e
+  puts "Could not load RubyLint (#{e})"
+end
+
+Dir['./tasks/**/*.rake'].each { |t| import t }
