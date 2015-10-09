@@ -5,3 +5,5 @@ license 'mit'
 description 'Installs/Configures trusted ssl certs on nodes'
 long_description 'Installs/Configures ssl_certs'
 version '0.2.4'
+
+depends 'chef-vault', '~> 1.3.1'

@@ -56,6 +56,12 @@ module SSLCertsCookbook
     def resource_csr(key, subject)
       SSLCertsCookbook::Utils::SigningRequest.new(key: key, name: subject)
     end
+
+    def key_cert_match?(private_key, certificate)
+      key = OpenSSL::PKey::RSA.new private_key
+      cert = OpenSSL::X509::Certificate.new certificate
+      key.n == cert.n
+    end
   end
 
   class InvalidKeyLengthError < ArgumentError

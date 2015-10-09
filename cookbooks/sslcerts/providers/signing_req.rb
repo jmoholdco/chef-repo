@@ -14,7 +14,14 @@ action :create do
       key_content = key.to_pem
       csr_content = csr.to_pem
 
-      node.set['csr_outbox'][csr_short_name] = csr_content
+      chef_vault_secret node['fqdn'] do
+        data_bag 'private_keys'
+        raw_data 'pem' => key_content
+        admins 'morgan'
+        search "fqdn:#{node['fqdn']}"
+      end
+
+      node.set['csr_outbox'][node['fqdn']] = csr_content
 
       file new_resource.name do
         action :create_if_missing
@@ -40,16 +47,18 @@ end
 
 protected
 
-def csr_short_name
-  _, file = ::File.split(new_resource.name)
-  ::File.basename(file)
+def cert_dir
+  @cert_dir ||= value_for_platform_family(
+    'rhel' => '/etc/pki/tls',
+    'debian' => '/etc/ssl'
+  )
 end
 
 def key_file
   unless new_resource.key_file
     _, file = ::File.split(new_resource.name)
-    filename = ::File.basename(file, ::File.extname(file))
-    new_resource.key_file '/etc/pki/tls/private/' + filename + '.key'
+    fname = ::File.basename(file, ::File.extname(file))
+    new_resource.key_file new_resource.cert_dir + '/private/' + fname + '.key'
   end
   new_resource.key_file
 end
