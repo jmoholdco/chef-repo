@@ -1,0 +1,3 @@
+[submodule "nagios"]
+	path = nagios
+	url = ./cookbooks/nagios
