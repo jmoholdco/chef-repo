@@ -5,3 +5,5 @@ license 'all_rights'
 description 'Installs/Configures chef-repo'
 long_description 'Installs/Configures chef-repo'
 version '0.1.0'
+
+depends 'x509', '~> 1.1.0'
