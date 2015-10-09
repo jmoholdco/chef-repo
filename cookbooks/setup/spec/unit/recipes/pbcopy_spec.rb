@@ -8,10 +8,7 @@ require 'spec_helper'
 
 describe 'setup::pbcopy' do
   context 'When all attributes are default, on an unspecified platform' do
-    let(:chef_run) do
-      ChefSpec::ServerRunner.new(platform: 'centos', version: '7.1.1503')
-        .converge(described_recipe)
-    end
+    let(:chef_run) { ChefSpec::ServerRunner.new.converge(described_recipe) }
 
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error

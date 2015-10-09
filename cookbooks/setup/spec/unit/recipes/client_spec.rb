@@ -10,7 +10,9 @@ RSpec.describe 'setup::client' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) { ChefSpec::ServerRunner.new.converge(described_recipe) }
     let(:dir) { chef_run.directory('/etc/chef/client.d') }
-    let(:template) { chef_run.template('/etc/chef/client.d/foreman.rb') }
+    let(:foreman_conf) { chef_run.template('/etc/chef/client.d/foreman.rb') }
+    let(:ssl_conf) { chef_run.template('/etc/chef/client.d/ssl.rb') }
+    let(:client_reload) { chef_run.ruby_block('reload_client_config') }
 
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
@@ -42,7 +44,27 @@ RSpec.describe 'setup::client' do
       end
 
       it 'subscribes to the directory resource' do
-        expect(template).to subscribe_to('directory[/etc/chef/client.d]')
+        expect(foreman_conf).to subscribe_to('directory[/etc/chef/client.d]')
+      end
+
+      it 'notifies template[/etc/chef/client.d/ssl.rb]' do
+        expect(foreman_conf).to notify('template[/etc/chef/client.d/ssl.rb]')
+      end
+    end
+
+    describe 'template[/etc/chef/client.d/ssl.rb]' do
+      it 'creates the template' do
+        expect(chef_run).to create_template('/etc/chef/client.d/ssl.rb')
+          .with(source: 'ssl.rb.erb', mode: 0644)
+      end
+
+      it 'subscribes to the first template' do
+        expect(ssl_conf)
+          .to subscribe_to('template[/etc/chef/client.d/foreman.rb]')
+      end
+
+      it 'notifies the ruby_block to reload the config' do
+        expect(ssl_conf).to notify('ruby_block[reload_client_config]')
       end
     end
 

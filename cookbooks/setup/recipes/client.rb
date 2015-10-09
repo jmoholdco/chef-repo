@@ -4,6 +4,8 @@
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
+include_recipe 'setup::environment'
+
 chef_gem 'chef_handler_foreman' do
   compile_time false if respond_to?(:compile_time)
 end
