@@ -9,4 +9,11 @@ group :development, :test do
   gem 'pry-theme'
   gem 'guard-chefspec', path: '/Users/morgan/projects/ruby/guard-chefspec'
   gem 'chef-vault-testfixtures'
+  gem 'berkshelf'
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'reek', require: false
+  gem 'flog', require: false
+  gem 'ruby-lint', require: false
+  gem 'ruby_gntp', require: false
 end

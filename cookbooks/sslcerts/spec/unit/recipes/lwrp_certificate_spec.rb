@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe 'test::lwrp_certificate_spec', :vault do
+RSpec.describe 'test::lwrp_certificate', :vault do
   let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
 
   it 'converges successfully' do

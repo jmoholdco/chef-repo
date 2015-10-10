@@ -21,7 +21,7 @@ action :create do
         search "fqdn:#{node['fqdn']}"
       end
 
-      node.set['csr_outbox'][node['fqdn']] = csr_content
+      node.set['csr_outbox'][node['fqdn']] ||= csr_content
 
       file new_resource.name do
         action :create_if_missing
@@ -58,7 +58,7 @@ def key_file
   unless new_resource.key_file
     _, file = ::File.split(new_resource.name)
     fname = ::File.basename(file, ::File.extname(file))
-    new_resource.key_file new_resource.cert_dir + '/private/' + fname + '.key'
+    new_resource.key_file cert_dir + '/private/' + fname + '.key'
   end
   new_resource.key_file
 end
