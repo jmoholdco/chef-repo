@@ -12,12 +12,12 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[jml-ubuntu-defaults]
+      - recipe[jml-defaults]
     attributes:
       dev_mode: true
   - name: without_admin_user
     run_list:
-      - recipe[jml-ubuntu-defaults]
+      - recipe[jml-defaults]
     attributes:
       dev_mode: true
       jml-ubuntu-defaults:

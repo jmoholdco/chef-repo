@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: jml-ubuntu-defaults
+# Cookbook Name:: jml-defaults
 # Recipe:: packages
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
@@ -19,6 +19,7 @@ if platform_family?('rhel')
   yum_package 'cmake'
 
   if node['ovirt_guest']
+    include_recipe 'yum-epel'
     yum_package 'ovirt-guest-agent-common' do
       action :install
     end

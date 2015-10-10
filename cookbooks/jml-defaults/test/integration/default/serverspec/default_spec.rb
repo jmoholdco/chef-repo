@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe 'jml-ubuntu-defaults::default' do
+RSpec.describe 'jml-defaults::default' do
   def undotify(str)
     str.tr('.', '')
   end
@@ -37,7 +37,7 @@ RSpec.describe 'jml-ubuntu-defaults::default' do
   end
 
   describe 'user' do
-    users = ['root', 'local']
+    users = os[:family] == 'redhat' ? %w(root centos) : %w(root ubuntu)
     users.each do |user|
       include_examples 'user config', user
     end
@@ -46,7 +46,8 @@ RSpec.describe 'jml-ubuntu-defaults::default' do
   describe 'cloning and linking dotfiles' do
     dotfile_links = ['.vim', '.oh-my-zsh']
     dotfiles = ['.zshrc', '.vimrc', '.zshenv']
-    users = ['/root', '/home/local']
+    users = %w(/root)
+    os[:family] == 'redhat' ? users << '/home/centos' : users << '/home/ubuntu'
     users.each do |u|
       dotfile_links.each do |f|
         include_examples 'dotfile symlinks', f, u

@@ -1,23 +1,33 @@
 #
-# Cookbook Name:: jml-ubuntu-defaults
+# Cookbook Name:: jml-defaults
 # Recipe:: dotfiles
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
-include_root = node['jml-ubuntu-defaults']['dotfiles']['include_root']
-users_need_dotfiles = [node['jml-ubuntu-defaults']['dotfiles']['users']].flatten
+include_root = node['jml-defaults']['dotfiles']['include_root']
+users_need_dotfiles = [node['jml-defaults']['dotfiles']['users']].flatten
 users_need_dotfiles << 'root' if include_root
 
 user 'root' do
-  shell node['jml-ubuntu-defaults']['dotfiles']['shell']
+  shell node['jml-defaults']['dotfiles']['shell']
   action :modify
+end
+
+ssh_keys = data_bag_item('ssh', 'authorized_keys')
+ssh_keys.delete('id')
+
+ssh_keys.each do |name, ssh_key|
+  ssh_authorize_key name do
+    key ssh_key['key']
+    user 'root'
+  end
 end
 
 home_dir_for = ->(user) { user == 'root' ? '/root' : "/home/#{user}" }
 
 users_need_dotfiles.each do |username|
   git "#{home_dir_for.call(username)}/dotfiles" do
-    repository node['jml-ubuntu-defaults']['dotfiles']['repo']
+    repository node['jml-defaults']['dotfiles']['repo']
     enable_submodules true
     user username
     action :sync
@@ -38,7 +48,7 @@ users_need_dotfiles.each do |username|
     mode 0755
     path "#{home_dir_for.call(username)}/.vimrc"
     action :create
-    variables plugins: node['jml-ubuntu-defaults']['vim']['plugins']
+    variables plugins: node['jml-defaults']['vim']['plugins']
     helpers(VundlePluginHelpers)
   end
 
@@ -49,7 +59,7 @@ users_need_dotfiles.each do |username|
     mode 0755
     path "#{home_dir_for.call(username)}/.zshrc"
     action :create
-    variables plugins: node['jml-ubuntu-defaults']['zsh']['plugins']
+    variables plugins: node['jml-defaults']['zsh']['plugins']
   end
 
   cookbook_file 'zshenv' do

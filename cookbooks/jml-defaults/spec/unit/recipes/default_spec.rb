@@ -1,12 +1,12 @@
 #
-# Cookbook Name:: jml-ubuntu-defaults
+# Cookbook Name:: jml-defaults
 # Spec:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-RSpec.describe 'jml-ubuntu-defaults::default', :vault do
+RSpec.describe 'jml-defaults::default', :vault do
   shared_examples 'includes apt::default' do |platform, version|
     context "on #{platform}, #{version}" do
       let(:chef_run) do
@@ -24,7 +24,7 @@ RSpec.describe 'jml-ubuntu-defaults::default', :vault do
     end
   end
 
-  describe 'jml-ubuntu-defaults::default' do
+  describe 'jml-defaults::default' do
     platforms = {
       'debian' => ['8.1'],
       'ubuntu' => ['12.04', '14.04', '15.04']
@@ -40,19 +40,8 @@ RSpec.describe 'jml-ubuntu-defaults::default', :vault do
     let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
     subject { chef_run }
     it { is_expected.to include_recipe 'chef-vault' }
-    it { is_expected.to include_recipe 'jml-ubuntu-defaults::packages' }
-    it { is_expected.to include_recipe 'jml-ubuntu-defaults::user' }
-    it { is_expected.to include_recipe 'jml-ubuntu-defaults::dotfiles' }
-  end
-
-  context 'When all attributes are default, on an unspecified platform' do
-    let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new
-      runner.converge(described_recipe)
-    end
-
-    it 'converges successfully' do
-      expect { chef_run }.to_not raise_error
-    end
+    it { is_expected.to include_recipe 'jml-defaults::packages' }
+    it { is_expected.to include_recipe 'jml-defaults::user' }
+    it { is_expected.to include_recipe 'jml-defaults::dotfiles' }
   end
 end

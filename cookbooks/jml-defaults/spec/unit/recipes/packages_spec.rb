@@ -1,12 +1,12 @@
 #
-# Cookbook Name:: jml-ubuntu-defaults
+# Cookbook Name:: jml-defaults
 # Spec:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-RSpec.describe 'jml-ubuntu-defaults::packages' do
+RSpec.describe 'jml-defaults::packages' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
       ChefSpec::SoloRunner.new.converge(described_recipe)
