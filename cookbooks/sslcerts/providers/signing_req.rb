@@ -10,7 +10,7 @@ attr_reader :key_file, :key, :cert
 
 action :create do
   converge_by("Create #{@new_resource}") do
-    unless ::File.exist? new_resource.name
+    unless ::File.exist?(new_resource.name) || node.attribute?('csr_outbox')
       key_content = key.to_pem
       csr_content = csr.to_pem
 
@@ -55,12 +55,9 @@ def cert_dir
 end
 
 def key_file
-  unless new_resource.key_file
-    _, file = ::File.split(new_resource.name)
-    fname = ::File.basename(file, ::File.extname(file))
-    new_resource.key_file cert_dir + '/private/' + fname + '.key'
-  end
-  new_resource.key_file
+  return new_resource.key_file if new_resource.key_file
+  file = ::File.basename(new_resource.name, ::File.extname(new_resource.name))
+  new_resource.key_file "#{cert_dir}/private/#{file}.key"
 end
 
 def key
