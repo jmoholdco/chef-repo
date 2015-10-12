@@ -23,5 +23,12 @@ describe 'nzbget::default' do
     it 'includes the source recipe' do
       expect(chef_run).to include_recipe('nzbget::source')
     end
+
+    it 'enables the service' do
+      expect(chef_run).to enable_service('nzbget').with(
+        init_command: '/usr/local/nzbget -D',
+        stop_command: '/usr/local/nzbget -Q'
+      )
+    end
   end
 end

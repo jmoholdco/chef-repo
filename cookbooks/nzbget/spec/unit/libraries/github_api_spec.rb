@@ -7,13 +7,13 @@ RSpec.describe GitHubAPI::Nzbget do
   describe '#latest_stable' do
     it 'returns the tarball url of the latest stable release' do
       expect(api.latest_stable).to eq(
-        'https://api.github.com/repos/nzbget/nzbget/tarball/v15.0')
+        'https://api.github.com/repos/nzbget/nzbget/tarball/v16.0')
     end
   end
 
   describe '#latest_testing' do
     it 'returns the tarball url of the latest testing release' do
-      expect(api.latest_testing).to eq('https://api.github.com/repos/nzbget/nzbget/tarball/v16.0-r1439')
+      expect(api.latest_testing).to eq('https://api.github.com/repos/nzbget/nzbget/tarball/v16.0')
     end
   end
 end

@@ -17,12 +17,12 @@ describe 'nzbget::source_tarball' do
 
     describe 'fetching the tarball' do
       let(:tarball) do
-        chef_run.remote_file('/var/chef/cache/nzbget-v16.0-r1439.tar.gz')
+        chef_run.remote_file('/var/chef/cache/nzbget-v16.0.tar.gz')
       end
 
       it 'fetches the remote tarball' do
         expect(chef_run).to create_remote_file(
-          '/var/chef/cache/nzbget-v16.0-r1439.tar.gz'
+          '/var/chef/cache/nzbget-v16.0.tar.gz'
         )
       end
 

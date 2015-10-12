@@ -9,4 +9,9 @@ describe 'nzbget::default' do
   describe file('/etc/nzbget.conf') do
     it { is_expected.to exist }
   end
+
+  describe service('nzbget') do
+    it { is_expected.to be_running }
+    it { is_expected.to be_enabled }
+  end
 end
