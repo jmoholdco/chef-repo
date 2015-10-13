@@ -68,7 +68,15 @@ directory "#{cookbook_dir}/spec/unit/recipes" do
   recursive true
 end
 
+directory "#{cookbook_dir}/spec/support" do
+  recursive true
+end
+
 cookbook_file "#{cookbook_dir}/spec/spec_helper.rb" do
+  action :create_if_missing
+end
+
+cookbook_file "#{cookbook_dir}/spec/support/shared_examples.rb" do
   action :create_if_missing
 end
 

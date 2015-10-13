@@ -4,3 +4,6 @@
 [submodule "cookbooks/cookbook-nfs"]
 	path = cookbooks/cookbook-nfs
 	url = git@github.com:atomic-penguin/cookbook-nfs.git
+[submodule "nzbget"]
+	path = nzbget
+	url = ./cookbooks/nzbget

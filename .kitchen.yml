@@ -6,6 +6,7 @@ provisioner:
   name: chef_zero
 
 platforms:
+  - name: ubuntu-14.04
   - name: centos-7.1
 
 suites:
@@ -17,3 +18,9 @@ suites:
     run_list:
       - recipe[chef-repo::chef_ca]
     attributes:
+  - name: nzb_server
+    run_list:
+      - recipe[setup]
+      - recipe[jml-defaults]
+      - recipe[nzbget]
+      - recipe[sonarr]

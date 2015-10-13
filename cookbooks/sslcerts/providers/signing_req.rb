@@ -14,13 +14,6 @@ action :create do
       key_content = key.to_pem
       csr_content = csr.to_pem
 
-      chef_vault_secret node['fqdn'] do
-        data_bag 'private_keys'
-        raw_data 'pem' => key_content
-        admins 'morgan'
-        search "fqdn:#{node['fqdn']}"
-      end
-
       node.set['csr_outbox'][node['fqdn']] ||= csr_content
 
       file new_resource.name do

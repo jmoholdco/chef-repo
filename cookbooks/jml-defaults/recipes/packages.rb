@@ -6,13 +6,10 @@
 #
 package 'git'
 package 'zsh'
+
+yum_package 'bzip2' if platform_family? 'rhel'
+
 include_recipe 'vim'
-
-virt = node.attribute?('virtualization') ? node['virtualization'] : nil
-
-if (virt) && (virt['system'] == 'vmware') && (virt['role'] == 'guest')
-  package 'open-vm-tools'
-end
 
 if platform_family?('rhel')
   yum_package 'gcc-c++'
