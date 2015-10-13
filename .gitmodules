@@ -7,3 +7,6 @@
 [submodule "nzbget"]
 	path = nzbget
 	url = ./cookbooks/nzbget
+[submodule "sonarr"]
+	path = sonarr
+	url = ./cookbooks/sonarr
