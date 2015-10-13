@@ -10,3 +10,6 @@
 [submodule "sonarr"]
 	path = sonarr
 	url = ./cookbooks/sonarr
+[submodule "media_server"]
+	path = media_server
+	url = ./cookbooks/media_server
