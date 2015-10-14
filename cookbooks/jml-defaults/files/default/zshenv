@@ -1,3 +1,0 @@
-export ZEXTRA_DIR=$HOME/.zextra
-
-source "${ZEXTRA_DIR}/env.zsh"
