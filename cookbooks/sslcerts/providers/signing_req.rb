@@ -9,12 +9,12 @@ end
 attr_reader :key_file, :key, :cert
 
 action :create do
-  converge_by("Create #{@new_resource}") do
-    unless ::File.exist?(new_resource.name) || node.attribute?('csr_outbox')
+  if node['csr_outbox'][node['fqdn']] != csr.to_pem
+    converge_by("Create #{@new_resource}") do
       key_content = key.to_pem
       csr_content = csr.to_pem
 
-      node.set['csr_outbox'][node['fqdn']] ||= csr_content
+      node.set['csr_outbox'][node['fqdn']] = csr_content
 
       file new_resource.name do
         action :create_if_missing
@@ -35,6 +35,8 @@ action :create do
       end
       new_resource.updated_by_last_action true
     end
+  else
+    Chef::Log.debug("#{new_resource} already exists. Nothing to do.")
   end
 end
 

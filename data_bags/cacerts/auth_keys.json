@@ -1,0 +1,12 @@
+{
+  "id": "auth_keys",
+  "admins": [
+    "morgan"
+  ],
+  "clients": [
+    "auth.jmorgan.org"
+  ],
+  "search_query": "fqdn:auth.jmorgan.org",
+  "morgan": "Oi9fHx8hXo6uTLWMtMr/q28aHHW3Kk/oMZJTKhRmfI2dqZO+TAlIiFF7V5NR\ntX8e8DBmWzLiGMrcjgapbznIFwwu+BbGHpuDPemm+7eFjKoVaenNihUqgbHd\nyV0IxvICe8jLGbtjrF/tb42kPCWj2lmunETpNAQLQJp4zSVz8MoW1QSQomRr\nRmWdqTA/gMzz/pi05sIGSCRzRYK4eU6kRoRQqkAndLPi2VDk4UL6nDg8x/tb\nHvUwFmpnlzqUwJ6+zF25EeN80GooBcuH2F9ZAvaF8/82H3cNBgi7NEdoglGq\niptVpYVfB0UvFxrg6fnp4uZzU38FJCbU3375zh3wCg==\n",
+  "auth.jmorgan.org": "xrGt84NzS6s5OskjRF589EiST2WMZh7JAxhSALvcUL2Vqpl1EHS7Ym8P4Bl4\nMnvvaIgVRzYtJin4iFnKaoUh07FWc92mfraD4xqT8DQLkemT776R/yHeXyRB\nllkeM5JFJ8ZjTP20qn7k4CP92FZwTsUV/LRujvZn8SPbtIKVMH+w/oAZIs0C\n661ldgpPd0apZDtKW2ksmECQ+Eo46J7H1Q9n8dCx6E7NM9H4nieFLV+l/344\nYzcCL015LShR8QxuaJT74eiRGwVauePM+pyAXgL8ffqA6UQSPlWeKw+sXQ+5\npAGYCwa3X244MrItvOQk1i9GYjczyh7FKIYD50UEZQ==\n"
+}
