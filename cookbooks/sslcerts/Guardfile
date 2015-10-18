@@ -1,24 +1,16 @@
-guard :chef, cmd: 'rspec' do
-  require 'guard/chef/dsl'
-  dsl = Guard::Chef::Dsl.new(self)
+notification :gntp, host: '127.0.0.1'
 
-  # ChefSpec files
-  chefspec = dsl.chefspec
-  watch(chefspec.spec_helper) { chefspec.spec_dir }
-  watch(chefspec.spec_support) { chefspec.spec_dir }
-  watch(chefspec.spec_files)
+rspec_opts = {
+  cmd: 'rspec',
+  failed_mode: :focus
+}
 
-  # Standard ruby files (not including cookbook libraries)
-  ruby = dsl.ruby
-  dsl.watch_spec_files_for(ruby.lib_files)
-
-  # Cookbook files
-  cookbook = dsl.cookbook
-  dsl.watch_spec_files_for(cookbook.recipes)
-  dsl.watch_spec_files_for(cookbook.attributes)
-  dsl.watch_spec_files_for(cookbook.libraries)
-  dsl.watch_spec_files_for(cookbook.providers)
-  dsl.watch_spec_files_for(cookbook.resources)
+guard :rspec, rspec_opts do
+  watch(%r{^spec/.+_spec\.rb$})
+  watch('spec/spec_helper.rb') { 'spec' }
+  watch(%r{^spec/(.+)/shared_examples\.rb$}) { 'spec' }
+  watch(%r{^recipes/(.+)\.rb$}) { |m| "spec/unit/recipes/#{m[1]}_spec.rb" }
+  watch(%r{^attributes/(.+)\.rb$}) { |m| "spec/unit/recipes/#{m[1]}_spec.rb" }
 end
 
 #  vim: set ts=8 sw=2 tw=0 ft=ruby et :

@@ -2,6 +2,7 @@
 ---
 driver:
   name: vagrant
+  vm_hostname: localhost.localdomain
 
 provisioner:
   name: chef_solo
@@ -17,12 +18,9 @@ platforms:
   - name: centos-7.1
 
 suites:
-  - name: lwrp_x509
+  - name: lwrp_certificate
     run_list:
-      - recipe[test::lwrp_x509]
+      - recipe[test::lwrp_certificate]
   - name: lwrp_rsa_key
     run_list:
       - recipe[test::lwrp_rsa_key]
-  - name: lwrp_signing_req
-    run_list:
-      - recipe[test::lwrp_signing_req]

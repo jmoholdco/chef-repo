@@ -33,11 +33,11 @@ module SSLCertsCookbook
       SSLCertsCookbook::Utils::Key.load(key_file, password)
     end
 
-    def resource_key(key_file, new_resource)
-      if key_file_valid?(key_file, new_resource.key_pass)
-        load_rsa_key(key_file, new_resource.key_pass)
+    def resource_key(options = {})
+      if key_file_valid?(options[:key_file], options[:key_pass])
+        load_rsa_key(options[:key_file], options[:key_pass])
       else
-        gen_rsa(new_resource.bits, new_resource.key_pass)
+        gen_rsa(options[:bits], options[:key_pass])
       end
     end
 
@@ -60,7 +60,7 @@ module SSLCertsCookbook
     def key_cert_match?(private_key, certificate)
       key = OpenSSL::PKey::RSA.new private_key
       cert = OpenSSL::X509::Certificate.new certificate
-      key.n == cert.n
+      key.public_key.to_pem == cert.public_key.to_pem
     end
   end
 

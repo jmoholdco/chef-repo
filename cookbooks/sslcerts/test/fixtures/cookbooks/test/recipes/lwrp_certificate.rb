@@ -1,14 +1,17 @@
 include_recipe 'chef-vault'
 
-file 'any potential existing cert' do
-  path '/etc/ssl_test/mysignedcert.pem'
-  action :delete
-end
+ssl_directory = value_for_platform_family(
+  'debian' => '/etc/ssl',
+  'rhel' => '/etc/pki/tls'
+)
 
-directory '/etc/ssl_test' do
-  recursive true
-end
-
-sslcerts_certificate '/etc/ssl_test/mysignedcert.pem' do
+sslcerts_certificate node['fqdn'] do
   action :create
+  ssl_dir ssl_directory
+  request_subject(
+    country: 'US',
+    state: 'Colorado',
+    organization: 'Default Org',
+    common_name: node['fqdn']
+  )
 end

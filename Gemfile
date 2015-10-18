@@ -16,6 +16,8 @@ group :development, :test do
   gem 'flog', require: false
   gem 'ruby-lint', require: false
   gem 'ruby_gntp', require: false
+  gem 'kitchen-sync', require: false
+  gem 'kitchen-vagrant'
 end
 
 group :github_api do
