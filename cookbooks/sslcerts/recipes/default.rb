@@ -5,16 +5,9 @@
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 #
 
-directory '/etc/pki/tls/csr' do
-  recursive true
-  notifies :create, "sslcerts_signing_req[/etc/pki/tls/csr/#{node['fqdn']}.csr]"
-end
-
-sslcerts_signing_req "/etc/pki/tls/csr/#{node['fqdn']}.csr" do
+sslcerts_certificate node['fqdn'] do
+  action :create
   common_name node['fqdn']
-  org 'JML Holdings, LLC'
-  country 'US'
-  city 'Denver'
-  state 'Colorado'
-  email "root@#{node['fqdn']}"
+  ssl_dir node['sslcerts']['dir']
+  request_subject node['sslcerts']['request']['subject']
 end
