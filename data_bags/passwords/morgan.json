@@ -1,0 +1,9 @@
+{
+  "id": "morgan",
+  "password": {
+    "encrypted_data": "1PacuB7fDQcBO2FkZ6L+DQMxLdPKRQlzKW3nJW9Zb+E=\n",
+    "iv": "cni4/xfpnBJwG0sCXZ9qAw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
