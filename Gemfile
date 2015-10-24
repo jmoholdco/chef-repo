@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf'
+gem 'unix-crypt'
+gem 'chef_helpers'
+gem 'chef-sugar'
 
 group :development, :test do
   gem 'guard', require: false
@@ -18,6 +21,8 @@ group :development, :test do
   gem 'ruby_gntp', require: false
   gem 'kitchen-sync', require: false
   gem 'kitchen-vagrant'
+  gem 'chef-ssl', path: '/Users/morgan/projects/ruby/oss-forks/chef-ssl-client'
+  gem 'yard'
 end
 
 group :github_api do
