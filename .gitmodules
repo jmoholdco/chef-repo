@@ -1,9 +1,6 @@
 [submodule "cookbooks/cookbook-nfs"]
 	path = cookbooks/cookbook-nfs
 	url = git@github.com:atomic-penguin/cookbook-nfs.git
-[submodule "cookbooks/open_directory"]
-	path = cookbooks/open_directory
-	url = https://github.com/jmoholdco/cookbook-open_directory.git
 [submodule "cookbooks/code_generator"]
 	path = cookbooks/code_generator
 	url = https://github.com/jmoholdco/code_generator.git
@@ -46,3 +43,6 @@
 [submodule "cookbooks/nameserver"]
 	path = cookbooks/nameserver
 	url = https://github.com/jmoholdco/cookbook-nameserver.git
+[submodule "cookbooks/open_directory"]
+	path = cookbooks/open_directory
+	url = https://github.com/jmoholdco/cookbook-open_directory.git
