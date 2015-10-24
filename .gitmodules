@@ -46,6 +46,3 @@
 [submodule "cookbooks/nameserver"]
 	path = cookbooks/nameserver
 	url = https://github.com/jmoholdco/cookbook-nameserver.git
-[submodule "cookbooks/ovirt"]
-	path = cookbooks/ovirt
-	url = https://github.com/jmoholdco/cookbook-ovirt.git
