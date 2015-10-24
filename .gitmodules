@@ -1,15 +1,51 @@
-[submodule "nagios"]
-	path = nagios
-	url = ./cookbooks/nagios
 [submodule "cookbooks/cookbook-nfs"]
 	path = cookbooks/cookbook-nfs
 	url = git@github.com:atomic-penguin/cookbook-nfs.git
-[submodule "nzbget"]
-	path = nzbget
-	url = ./cookbooks/nzbget
-[submodule "sonarr"]
-	path = sonarr
-	url = ./cookbooks/sonarr
-[submodule "media_server"]
-	path = media_server
-	url = ./cookbooks/media_server
+[submodule "cookbooks/open_directory"]
+	path = cookbooks/open_directory
+	url = https://github.com/jmoholdco/cookbook-open_directory.git
+[submodule "cookbooks/code_generator"]
+	path = cookbooks/code_generator
+	url = https://github.com/jmoholdco/code_generator.git
+[submodule "cookbooks/foreman"]
+	path = cookbooks/foreman
+	url = https://github.com/jmoholdco/cookbook-foreman.git
+[submodule "cookbooks/jml-defaults"]
+	path = cookbooks/jml-defaults
+	url = https://github.com/jmoholdco/cookbook-jml-defaults.git
+[submodule "cookbooks/media_server"]
+	path = cookbooks/media_server
+	url = https://github.com/jmoholdco/cookbook-media_server.git
+[submodule "cookbooks/netatalk"]
+	path = cookbooks/netatalk
+	url = https://github.com/jmoholdco/cookbook-netatalk.git
+[submodule "cookbooks/nfs_server"]
+	path = cookbooks/nfs_server
+	url = https://github.com/jmoholdco/cookbook-nfs_server.git
+[submodule "cookbooks/nzbget"]
+	path = cookbooks/nzbget
+	url = https://github.com/jmoholdco/cookbook-nzbget.git
+[submodule "cookbooks/public"]
+	path = cookbooks/public
+	url = https://github.com/jmoholdco/cookbook-public.git
+[submodule "cookbooks/setup"]
+	path = cookbooks/setup
+	url = https://github.com/jmoholdco/cookbook-setup.git
+[submodule "cookbooks/sonarr"]
+	path = cookbooks/sonarr
+	url = https://github.com/jmoholdco/cookbook-sonarr.git
+[submodule "cookbooks/sslcerts"]
+	path = cookbooks/sslcerts
+	url = https://github.com/jmoholdco/cookbook-sslcerts.git
+[submodule "cookbooks/time_machine"]
+	path = cookbooks/time_machine
+	url = https://github.com/jmoholdco/cookbook-time_machine.git
+[submodule "cookbooks/nagios"]
+	path = cookbooks/nagios
+	url = https://github.com/jmoholdco/cookbook-nagios.git
+[submodule "cookbooks/nameserver"]
+	path = cookbooks/nameserver
+	url = https://github.com/jmoholdco/cookbook-nameserver.git
+[submodule "cookbooks/ovirt"]
+	path = cookbooks/ovirt
+	url = https://github.com/jmoholdco/cookbook-ovirt.git
