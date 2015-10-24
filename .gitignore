@@ -9,3 +9,4 @@
 .bundle .kitchen
 .bundle/ .kitchen/
 Gemfile.lock
+*/.kitchen/*
