@@ -23,6 +23,7 @@ group :development, :test do
   gem 'kitchen-vagrant'
   gem 'chef-ssl', path: '/Users/morgan/projects/ruby/oss-forks/chef-ssl-client'
   gem 'yard'
+  gem 'simplecov', require: false
 end
 
 group :github_api do
