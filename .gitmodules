@@ -46,3 +46,6 @@
 [submodule "cookbooks/open_directory"]
 	path = cookbooks/open_directory
 	url = https://github.com/jmoholdco/cookbook-open_directory.git
+[submodule "cookbooks/mirror"]
+	path = cookbooks/mirror
+	url = https://github.com/jmoholdco/cookbook-mirror.git
