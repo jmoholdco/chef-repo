@@ -4,6 +4,7 @@ gem 'berkshelf'
 gem 'unix-crypt'
 gem 'chef_helpers'
 gem 'chef-sugar'
+gem 'fauxhai', github: 'customink/fauxhai'
 
 group :development, :test do
   gem 'guard', require: false
