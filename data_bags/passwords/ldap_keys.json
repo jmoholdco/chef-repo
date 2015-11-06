@@ -1,0 +1,12 @@
+{
+  "id": "ldap_keys",
+  "admins": [
+    "morgan"
+  ],
+  "clients": [
+    "orion.jmorgan.org"
+  ],
+  "search_query": "name:orion.jmorgan.org",
+  "orion.jmorgan.org": "yKEaB962oVGfELlxz82GTYsO50DRBlwmulI2mjkzbriInNH0ACiicVcRhk1p\ngEGCbJqG9FC4SlzHcy6pJFonnDU82zFUjUdWK/ZfiutM6IdRzEGY596X3cT7\nrgVKzwZ/0SHQmcdyFnpBgCfl3HWd3zqc11UtiJD8blLPOxtsf9MgvEEVp779\nXzP9/2yWlfRXFgqw0d8l9Tkl26ZtJEXP/6q2/3MozcgUOGkV+3WlF/BeOGrG\n2gWQ+bkYKd8gjM951ACVgtRw4Sw8KNtyV1+FBhQC2ACtnehpuWrfcv4AJhzM\ngePtrwLL0008I8e2fx3ZZgNj3h25MB0tRb+7dO+gCA==\n",
+  "morgan": "j7VqWSkB3hVAQfxiCzNND6t2HzENA8+VfO9nIgsiWiRu9fNsDHhKVi0TftrD\n+0/nTCOz+H5TRKpAIGU3i1qUTbqlvCV1qV+48s2wzbOMD9CgU4v86wJYxyU+\ngZjIC9RONr8Wyis8TKuh4/+DRN+tI/Lvp3uGB5q37Wp4Sx2OYXvhGDvepbLE\nyc1qJYnpga26QHvtZ/pHyxDUQ2LH/vau1+S50rQXTP7PNUPw3yjNW3UC53P1\nUNDhqweu79E7/5bHTBXqMJjji3CaN1voVJKEBb59s1DxtEH6/BamYmToGpOY\nSNcpORpGKRcVL/rnauY/yKW7hsl4ng9oEmiXxgKWpQ==\n"
+}

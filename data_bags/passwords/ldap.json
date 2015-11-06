@@ -1,0 +1,9 @@
+{
+  "id": "ldap",
+  "password": {
+    "encrypted_data": "jPmg3dn/P3k/XsX/hs1kb/Ct6p+AEVwjRgybmq6ZQjkZDBV2shBGHoOhWSHs\nTxF3\n",
+    "iv": "eRyveSlo7V7zLD+PtdYb5g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

@@ -49,3 +49,9 @@
 [submodule "cookbooks/mirror"]
 	path = cookbooks/mirror
 	url = https://github.com/jmoholdco/cookbook-mirror.git
+[submodule "cookbooks/couch_potato"]
+	path = cookbooks/couch_potato
+	url = https://github.com/jmoholdco/cookbook-couch_potato.git
+[submodule "cookbooks/dhcp_pxe"]
+	path = cookbooks/dhcp_pxe
+	url = https://github.com/jmoholdco/cookbook-dhcp_pxe.git
