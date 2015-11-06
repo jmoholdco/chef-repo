@@ -5,6 +5,7 @@ gem 'unix-crypt'
 gem 'chef_helpers'
 gem 'chef-sugar'
 gem 'fauxhai', github: 'customink/fauxhai'
+gem 'chef-provisioning-fog'
 
 group :development, :test do
   gem 'guard', require: false

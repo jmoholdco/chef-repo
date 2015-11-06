@@ -1,8 +1,8 @@
 {
   "id": "local",
   "password": {
-    "encrypted_data": "JjS9MxM4Wg/A0f2ICP0x+5TSq0QpozozjAYTRtK1nR0=\n",
-    "iv": "L4oOfex9jSAw25WSrN7pJA==\n",
+    "encrypted_data": "QnWhRvpMqt52iAQ5uGc69pOHUUYCatu2hikM8YEezZ4=\n",
+    "iv": "IBn6aNcjPERT3LUWzwZ0VQ==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   }
